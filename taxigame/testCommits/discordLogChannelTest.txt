@@ -1,0 +1,1 @@
+test to see if log channel will register commit and push
