@@ -9,16 +9,16 @@ height = 176.0
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Taxi" type="Sprite2D" parent="."]
 position = Vector2(127, 122)
 rotation = 1.5708
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_o2p7n")
 script = ExtResource("2_kwhe8")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Taxi Collision Thing" type="Area2D" parent="."]
 position = Vector2(0, 648)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="Actual Collision Thing" type="CollisionShape2D" parent="Taxi Collision Thing"]
 position = Vector2(127, -528)
 shape = SubResource("CapsuleShape2D_hrpme")
